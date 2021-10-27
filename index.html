@@ -4,14 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>niñes monstruxs</title>
+    <title>niñxs monstruxs</title>
     <script>
         function redireccionar(){
             window.location.href='https://studio.onirix.com/exp/LJOGa3'
         }
     </script>
+    <style>
+         .habilitar{
+        display: flex;
+        flex-direction: column;
+        background-image: url('img/mana-fondo-web.jpg');
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25em;
+        color: white;
+        z-index: 9999;
+
+    }
+    button{
+      font-family: helvetica;
+      color: whitesmoke;
+      background-color: transparent;
+      border-style: none;
+      font-weight: bold;
+    }
+    .box{
+      width: 90vw;
+      padding-top: 5%;
+    }
+    #fran{
+      width: 90vw;
+      height: auto;
+    }
+    #titulo{
+      width: 90vw;
+      height: auto;
+    }
+    #logo{
+      width: 25vw;
+      height: auto;
+    }
+    .logos{
+      padding-top: 25%;
+    }
+    #botonIniciar{
+      padding-top: 10vh;
+  
+    }
+    .btn{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 5em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+    </style>
 </head>
-<body onload='redireccionar()'>
+<body>
+
+    <div id= 'habilitar' class="habilitar">
+        <div class="box" id="titulos">
+          <img src="img/francisca-armando.png" id="fran" >
+          <br><br>
+          <img src='img/niñxs-monstruxs.png' id="titulo">
+        </div>
+        <div class="box" id="botonIniciar">
+          <button id='boton'onclick="redireccionar()"> ingresar </button>
+        </div>
+  
+          <div class="box" id="logos">
+          <img src="img/logo-chela.png" id="logo" >
+          <img src="img/logo-fadu.png" id="logo">
+          </div>
+      </div>
     
 </body>
 </html>
